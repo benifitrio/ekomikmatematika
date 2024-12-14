@@ -1,0 +1,67 @@
+.container {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(../bg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#neonShadow {
+    width: 16em;
+    height: 3em;
+    position: absolute;
+    top: 8.4em;
+    border: none;
+    border-radius: 3em;
+    transition: 0.3s;
+    background-color: rgba(156, 161, 160, 0.3);
+    animation: glow 1s infinite;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 430px) {
+    #neonShadow {
+        top: 12.5em;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #neonShadow {
+        top: 10em;
+    }
+}
+
+a#bg-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    padding-right: 2.5%;
+    font-size: 1.5em;
+}
+
+#neonShadow:hover {
+    transform: translateX(-10px)rotate(5deg);
+    background-color: #c3bacc;
+    transition: 0.5s;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 5px 5px 10px rgb(93, 52, 168), -5px -5px 10px rgb(93, 52, 168);
+    }
+    50% {
+        box-shadow: 5px 5px 10px rgb(81, 224, 210), -5px -5px 10px rgb(81, 224, 210)
+    }
+    100% {
+        box-shadow: 5px 5px 10px rgb(93, 52, 168), -5px -5px 10px rgb(93, 52, 168)
+    }
+}

@@ -1,0 +1,135 @@
+.banner-container {
+    width: 100%;
+    position: relative;
+    padding: 0px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+    max-height: 600px;
+    height: 600px;
+    background: url("../assets/img/kidney.png") no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+}
+
+.bannerOverlay {
+    content: '';
+    width: 100%;
+    position: absolute;
+    /* background-image: url("../assets/img/bg_line.png"); */
+    /* background-repeat: repeat; */
+    max-height: 600px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 3;
+}
+
+.banner-content h2 {
+    color: #fb6c00 !important;
+    font-size: 3.5em;
+    margin: 2% 0 30px;
+    line-height: 1.2em;
+}
+
+.banner-content p {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #faf9f9;
+    line-height: 1.6em;
+}
+
+@media (max-width: 480px) {
+    .da-slider {
+        width: 100%;
+        min-width: initial;
+        height: 205px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .home-mg {
+        margin-top: 5em;
+    }
+    .banner-container {
+        width: 100%;
+        background-position: top;
+        height: 270px;
+    }
+    .bannerOverlay {
+        height: 270px;
+    }
+    .da-slide h2 {
+        font-size: 40px;
+        text-align: center;
+        width: initial;
+        top: 10px;
+    }
+    #header .logo a {
+        font-size: .8em;
+    }
+    .banner-content p {
+        font-size: 1em;
+    }
+    #hero .container {
+        padding-top: 1.5em;
+    }
+    .da-slide p {
+        width: 65%;
+        top: 65px;
+        height: 50px;
+    }
+}
+
+.home-mg {
+    margin-top: 9em;
+}
+
+@media (max-width: 520px) {
+    .da-slider {
+        width: 100%;
+        min-width: initial;
+        height: 205px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .home-mg {
+        margin-top: 5em;
+    }
+    .banner-container {
+        width: 100%;
+        background-position: top;
+        height: 320px;
+    }
+    .bannerOverlay {
+        height: 320px;
+    }
+    .da-slide h2 {
+        font-size: 2em;
+        font-weight: 500;
+        text-align: center;
+        width: initial;
+        top: 10px;
+    }
+    #header .logo a {
+        font-size: .8em;
+        font-weight: 800;
+    }
+    .banner-content p {
+        font-size: 1em;
+    }
+    .da-slide p {
+        width: 86%;
+        top: 67px;
+        height: 76px;
+    }
+    .section-title h2 {
+        font-size: 1.5em;
+        margin-bottom: .4em;
+        padding-bottom: .4em;
+    }
+    section {
+        padding: 1em;
+    }
+}

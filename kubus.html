@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>E-KOMIK - Kunci Jawaban Kubus</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/icon/favicon.ico" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex justify-content-between align-items-center ">
+                <a href="home.html" class="logo me-auto"><img src="assets/UIN-Malang.jpg" alt="" class="img-fluid mr-2"></a>
+                <h1 class="logo me-auto"><a href="home.html">E-KOMIK</a></h1>
+            </div>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link" href="home.html">Beranda</a></li>
+                    <li><a class="nav-link active" href="materi.html">Materi</a></li>
+                    <li><a class="nav-link " href="penutup.html">Penutup</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle "></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs section-bg">
+            <div class="container">
+                <ol>
+                    <li><a href="home.html">Beranda</a></li>
+                    <li>Kunci Jawaban Kubus</li>
+                </ol>
+            </div>
+        </section>
+        <!-- End Breadcrumbs -->
+
+        <section id="team" class="team section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Pembahasan Latihan Soal Kubus</h2>
+                    <form class="mb-3">
+                        <div class="form-group">
+                            <label for="Password1">Masukkan Password</label>
+                            <p></p>
+                            <input type="name" class="form-control" id="Password1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-success" id="kubus">Lihat Pembahasan</button>
+                    </form>
+                    <p class=" d-none text-danger" id="salah1">Password salah! Ulangi.</p>
+                    <ul class="list-group d-none" id="jawaban1">
+                        <p>
+                            Silahkan kalian unduh dan pelajari pembahasan soal latihan kubus di bawah ini. Pastikan kalian sudah berusaha mengerjakan soal latihan terlebih dahulu!<br>
+                            <a href="LATIHAN 1 _ KUBUS.pdf" class="btn btn-warning mt-2 p-2 text-white font-weight-bold p-2 mb-3">Unduh</a>
+                        </p>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe src="https://drive.google.com/file/d/19meTR3TIWg3ZuOpfpGu4GBPoyxph4NEp/preview" class="w-100 " allow="autoplay"></iframe>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>E-KOMIK</h3>
+                        <p>
+                            Safira Eka Rahmadhani<br> Jalan Gajayana No. 50 Malang 65144<br> Indonesia <br><br>
+                            <strong>Phone:</strong> +62813-6856-3940<br>
+                            <strong>Email:</strong> ekasaja735@gmail.com<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Safira</span></strong>. E-KOMIK
+            </div>
+            <div class="credits">
+                Dibuat dengan &hearts; <a href="#">Safira Eka Rahmadhani</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script>
+        const kunci1 = document.querySelector('#kubus');
+
+        kunci1.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            if (document.querySelector('#Password1').value == 'kubus') {
+
+                document.querySelector('#jawaban1').classList.add('d-block')
+                document.querySelector('#salah1').classList.remove('d-block')
+            } else {
+                document.querySelector('#salah1').classList.add('d-block')
+                document.querySelector('#jawaban1').classList.remove('d-block')
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
