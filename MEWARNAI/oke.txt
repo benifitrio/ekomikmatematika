@@ -1,0 +1,10 @@
+    <option value="gajah.jpg">Gambar 1</option>
+     <option value="Kucing.jpg">Gambar 2</option>
+      <option value="kelinci.jpg">Gambar 3</option>
+
+
+      const imageOptions = {
+    "gajah.jpg": "Gambar 1",
+    "Kucing.jpg": "Gambar 2",
+    "kelinci.jpg": "Gambar 3"
+};

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Mewarnai Gambar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Aplikasi Mewarnai Gambar</h1>
+
+        <!-- Pilihan Gambar -->
+        <div class="controls">
+            <label for="imageSelect">Pilih Gambar: </label>
+            <select id="imageSelect">
+                <option value="gajah.jpg">Gambar 1</option>
+                <option value="Kucing.jpg">Gambar 2</option>
+                <option value="kelinci.jpg">Gambar 3</option>
+            </select>
+        </div>
+
+        <!-- Pilihan Warna dengan Scroll Horizontal -->
+        <div class="color-picker-container">
+            <label for="colorPicker">Pilih Warna: </label>
+            <div class="color-picker">
+                <button class="color-btn" style="background-color: red;" data-color="red"></button>
+                <button class="color-btn" style="background-color: green;" data-color="green"></button>
+                <button class="color-btn" style="background-color: black;" data-color="black"></button>
+                <button class="color-btn" style="background-color: white;" data-color="white"></button>
+                <button class="color-btn" style="background-color: yellow;" data-color="yellow"></button>
+                <button class="color-btn" style="background-color: blue;" data-color="blue"></button>
+                <button class="color-btn" style="background-color: purple;" data-color="purple"></button>
+                <button class="color-btn" style="background-color: orange;" data-color="orange"></button>
+                <button class="color-btn" style="background-color: pink;" data-color="pink"></button>
+                <button class="color-btn" style="background-color: brown;" data-color="brown"></button>
+                <button class="color-btn" style="background-color: gray;" data-color="gray"></button>
+            </div>
+        </div>
+
+        <!-- Kontrol Zoom -->
+        <div class="zoom-controls">
+            <button id="zoomIn">Zoom In</button>
+            <button id="zoomOut">Zoom Out</button>
+        </div>
+
+        <!-- Area Canvas -->
+        <div class="canvas-container">
+            <canvas id="coloringCanvas"></canvas>
+        </div>
+
+        <button id="saveButton">Simpan Gambar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
